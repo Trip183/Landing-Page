@@ -12,12 +12,6 @@
   background-color: lightgreen;
 }
 
-.item {
-  flex: 1;
-  margin: 30px;
-  border: 4px solid blue;
-}
-
 .header {
   margin-left: 12px;
   justify-content: flex-start;
@@ -80,10 +74,37 @@
 /*This is the second section */
 
 .info-section {
-  display: flex;
+  text-align: center;
 }
 
-.info-section h2 {
+.info-title {
   font-size: 48px;
   font-weight: 900;
+}
+
+.box-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  flex: 1;
+  margin: 30px;
+  border: 4px solid blue;
+  padding: 50px;
+  border-radius: 25px;
+}
+
+.box-text {
+  text-align: center;
+  flex-wrap: wrap;
+  max-width: 200px;
 }
